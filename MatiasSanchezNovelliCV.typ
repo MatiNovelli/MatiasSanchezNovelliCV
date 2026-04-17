@@ -35,16 +35,17 @@
     text(weight: "bold")[❖ #role], align(right)[#date],
   )
   // Fila 2: Lugar y Ubicación (si existen)
-  if place != "" {
+  if place != none {
     grid(
       columns: (1fr, auto),
       text(style: "italic")[#place], align(right)[#location]
     )
   }
   // Descripción
-  if description != "" {
+  if description != none {
     v(3pt)
-    par(justify: true, leading: 0.6em)[#description]
+    set par(justify: true, leading: 0.6em)
+    description
   }
   v(8pt)
 }
@@ -90,19 +91,20 @@
 #cv-item(
   "Profesor Particular",
   "Jan 2025 — Present",
-  "",
-  "",
-  "Dictado de clases y preparación de exámenes con alumnos de *nivel secundario* en las materias de *física*, *química* y *matemática*, así como para estudiantes de *nivel universitario* en *programación en C*."
+  none,
+  none,
+  [Dictado de clases y preparación de exámenes con alumnos de *nivel secundario* en las materias de *física*, *química* y *matemática*, así como para estudiantes de *nivel universitario* en *programación en C*.],
 )
 
 #cv-item(
   "Head of Mentors & Workshops, Computer Society ITBA",
   "Apr 2025 — Present",
-  "",
+  none,
   "Buenos Aires",
-  "Fui responsable de organizar la *primera competencia de programación cuántica en Argentina*. Desde el departamento Mentors and Workshops, nos ocupamos de la capacitación de los participantes, coordinar espacios físicos y contactar speakers. La *QuantumJam* convocó a *más de 100 estudiantes* que implementaron el *protocolo BB84*.
+  [Fui responsable de organizar la *primera competencia de programación cuántica en Argentina*. Desde el departamento Mentors and Workshops, nos ocupamos de la capacitación de los participantes, coordinar espacios físicos y contactar speakers. La *QuantumJam* convocó a *más de 100 estudiantes* que implementaron el *protocolo BB84*.
 
-Como *Head* del departamento de *Mentors & Workshops* para *hackITBA*, lideré la *gestión técnica y logística* del evento más grande del ITBA con *más de 200 participantes*. Mi rol incluyó la *coordinación de mentores y jurados*, negociación con marcas de comida y contacto con la empresa Puentes para los premios.",
+
+  Como *Head* del departamento de *Mentors & Workshops* para *hackITBA*, lideré la *gestión técnica y logística* del evento más grande del ITBA con *más de 200 participantes*. Mi rol incluyó la *coordinación de mentores y jurados*, negociación con marcas de comida y contacto con la empresa Puentes para los premios.],
 )
 
 // Sección EDUCACIÓN
@@ -112,8 +114,8 @@ Como *Head* del departamento de *Mentors & Workshops* para *hackITBA*, lideré l
   "Instituto tecnológico de Buenos Aires (ITBA)",
   "Mar 2024",
   "Ingeniería Informática",
-  "",
-  "Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas."
+  none,
+  [Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas.],
 )
 
 #section-title("Idiomas")
