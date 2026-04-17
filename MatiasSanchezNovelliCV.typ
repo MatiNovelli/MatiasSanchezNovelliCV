@@ -57,7 +57,7 @@
   #v(5pt)
   #text(weight: "bold")[Estudiante de Ingeniería Informática] \
   #v(2pt)
-  Villa Ballester, 1653, Argentina
+  Villa Ballester, Buenos Aires, Argentina
 ]
 
 #v(10pt)
@@ -66,7 +66,7 @@
 #line(length: 100%, stroke: 0.5pt + gray)
 #grid(
   columns: (1fr, 1fr),
-  align(left)[01159095532],
+  align(left)[+54 11 5909-5532],
   align(right)[msancheznovelli\@itba.edu.ar]
 )
 #line(length: 100%, stroke: 0.5pt + gray)
@@ -81,7 +81,7 @@
 // Sección PROFILE
 #section-title("Profile")
 #par(justify: true)[
-  Estudiante de Ingeniería Informática en ITBA con sólida formación en programación y desarrollo de software. Apasionado por la resolución de problemas y la creación de soluciones tecnológicas innovadoras. Proactivo, orientado a resultados y con habilidades para trabajar en equipo y adaptarse a nuevos desafíos.
+  Estudiante de *Ingeniería Informática* en *ITBA* con sólida formación en *programación y desarrollo de software*. Apasionado por la resolución de problemas y la creación de soluciones tecnológicas innovadoras. *Proactivo*, *orientado a resultados* y con habilidades para *trabajar en equipo* y adaptarse a nuevos desafíos.
 ]
 
 // Sección EXPERIENCIA LABORAL
@@ -92,7 +92,7 @@
   "Jan 2025 — Present",
   "",
   "",
-  "Dictado de clases y preparación de exámenes con alumnos de nivel secundario en las materias de física, química y matemática, así como para estudiantes de nivel universitario en programación en C."
+  "Dictado de clases y preparación de exámenes con alumnos de *nivel secundario* en las materias de *física*, *química* y *matemática*, así como para estudiantes de *nivel universitario* en *programación en C*."
 )
 
 #cv-item(
@@ -100,7 +100,9 @@
   "Apr 2025 — Present",
   "",
   "Buenos Aires",
-  "Creamos y organizamos la primera competencia de programación cuántica en Argentina. Desde el departamento Mentors and Workshops, fui responsable de la capacitación de los participantes, así como de coordinar los espacios físicos para el desarrollo de la competencia y contactar a los speakers del evento. La QuantumJam convocó a más de 100 estudiantes de diversas universidades de todo el país, quienes debieron implementar el protocolo de comunicación cuántica BB84 como parte de la evaluación."
+  "Fui responsable de organizar la *primera competencia de programación cuántica en Argentina*. Desde el departamento Mentors and Workshops, nos ocupamos de la capacitación de los participantes, coordinar espacios físicos y contactar speakers. La *QuantumJam* convocó a *más de 100 estudiantes* que implementaron el *protocolo BB84*.
+
+Como *Head* del departamento de *Mentors & Workshops* para *hackITBA*, lideré la *gestión técnica y logística* del evento más grande del ITBA con *más de 200 participantes*. Mi rol incluyó la *coordinación de mentores y jurados*, negociación con marcas de comida y contacto con la empresa Puentes para los premios.",
 )
 
 // Sección EDUCACIÓN
@@ -108,16 +110,14 @@
 
 #cv-item(
   "Instituto tecnológico de Buenos Aires (ITBA)",
-  "Mar 2023",
+  "Mar 2024",
   "Ingeniería Informática",
   "",
-  "Tercer año en curso, con materias como programación imperativa, programación orientada a objetos, arquitectura de computadoras, álgebra, matemática discreta y lógica computacional aprobadas."
+  "Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas."
 )
 
 #section-title("Idiomas")
 
 #align(center)[
-  Español #h(5pt) _Native speaker_ \
-  #v(5pt) // Espacio vertical entre líneas
   Inglés #h(5pt) _B2_
 ]
