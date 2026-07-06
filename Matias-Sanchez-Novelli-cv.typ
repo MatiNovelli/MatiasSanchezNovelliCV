@@ -3,6 +3,9 @@
 #let dark-text = rgb("#2c2c2c")
 #let medium-text = rgb("#555555")
 
+// Marcador para datos a completar antes de enviar (resaltado en rojo)
+#let todo(body) = text(fill: rgb("#c0392b"), weight: "bold")[#body]
+
 #set page(
   paper: "us-letter",
   margin: (x: 1.8cm, y: 1.5cm),
@@ -116,7 +119,9 @@
   "Ene 2025 — Presente",
   none,
   none,
-  [Dictado de clases y preparación de exámenes con alumnos de *nivel secundario* en las materias de *física*, *química* y *matemática*, así como para estudiantes de *nivel universitario* en *programación en C*.],
+  [
+    - Enseño programación en *C* (punteros, gestión de memoria y estructuras de control) y en *Java* (paradigma de programación orientada a objetos, buenas practicas en el desarrollo de software, estructuras de datos y algoritmos) a #todo[+50] estudiantes universitarios, preparándolos para aprobar la cursada de la materia.
+  ],
 )
 
 #cv-item(
@@ -124,9 +129,10 @@
   "Abr 2025 — Presente",
   none,
   "Buenos Aires",
-  [Fui responsable de organizar la *primera competencia de programación cuántica en Argentina*. Desde el departamento Mentors and Workshops, nos ocupamos de la capacitación de los participantes, coordinar espacios físicos y contactar speakers. La *QuantumJam* convocó a *más de 100 estudiantes* que implementaron el *protocolo BB84*.
-
-  Como *Head* del departamento de *Mentors & Workshops* para *hackITBA*, lideré la *gestión técnica y logística* del evento más grande del ITBA con *más de 200 participantes*. Mi rol incluyó la *coordinación de mentores y jurados*, negociación con marcas de comida y contacto con la empresa Puentes para los premios.],
+  [
+    - Organicé la *primera competencia de programación cuántica de Argentina* (QuantumJam) con el apoyo *IBM*, capacitando a *100+ estudiantes* para implementar el protocolo *BB84* de criptografía cuántica.
+    - Lideré la coordinación técnica y logística de *hackITBA* (*200+ participantes*), el hackathon más grande del ITBA, gestionando #todo[+20] mentores y jurados y consiguiendo sponsors para los premios.
+  ],
 )
 
 // Sección EDUCACIÓN
@@ -137,7 +143,7 @@
   "Mar 2024",
   "Ingeniería Informática",
   none,
-  [Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas.],
+  [Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *sistemas operativos*, *interacción hombre-computadora*, *ingeniería del software*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas.],
 )
 
 // Sección IDIOMAS
