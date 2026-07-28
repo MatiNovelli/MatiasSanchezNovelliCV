@@ -130,7 +130,7 @@
   none,
   "Buenos Aires",
   [
-    - Organicé la *primera competencia de programación cuántica de Argentina* (QuantumJam) con el apoyo *IBM*, capacitando a *100+ estudiantes* para implementar el protocolo *BB84* de criptografía cuántica.
+    - Organicé la *primera competencia de programación cuántica de Argentina* (QuantumJam) con el apoyo de *IBM*, capacitando a *100+ estudiantes* para implementar el protocolo *BB84* de criptografía cuántica.
     - Lideré la coordinación técnica y logística de *hackITBA* (*200+ participantes*), el hackathon más grande del ITBA, gestionando #todo[+20] mentores y jurados y consiguiendo sponsors para los premios.
   ],
 )
@@ -143,7 +143,7 @@
   "Mar 2024",
   "Ingeniería Informática",
   none,
-  [Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *sistemas operativos*, *interacción hombre-computadora*, *ingeniería del software*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas.],
+  [Tercer año en curso, con materias como *programación imperativa*, *programación orientada a objetos*, *arquitectura de computadoras*, *sistemas operativos*, *interacción hombre-computadora*, *ingeniería del software*, *base de datos*, *álgebra*, *matemática discreta* y *lógica computacional* aprobadas.],
 )
 
 // Sección IDIOMAS
