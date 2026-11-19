@@ -117,17 +117,17 @@
 // Sección PERFIL
 #section-title("Perfil")
 #par(justify: true)[
-  #text(size: 8.8pt)[Estudiante de *tercer año de Ingeniería Informática* en *ITBA* (graduación esperada *dic 2028*) con foco en *inteligencia artificial aplicada* y desarrollo *backend*. Desarrollé *end-to-end* un *agente de ventas por WhatsApp* sobre la *API de Claude* para un cliente real que recibe *\~250 consultas diarias*. Co-dirijo *Computer Society ITBA*, donde capacité a *100+ estudiantes* para la primera competencia de *programación cuántica* de Argentina. Disponible para *pasantía*, *trainee* o puesto *Junior part-time*.]
+  #text(size: 8.8pt)[Estudiante de *cuarto año de Ingeniería Informática* en *ITBA* (graduación esperada *dic 2028*) y desarrollador *full stack* orientado a *IA aplicada*. Desarrollé y *puse en producción* un *agente de ventas con IA por WhatsApp* sobre la *API de Claude* y *reduje un 48 % su costo por llamada al modelo*. Co-dirijo *Computer Society ITBA*. Disponible para *pasantía*, *trainee* o puesto *Junior part-time*.]
 ]
 
 // Sección HABILIDADES TÉCNICAS
 #section-title("Habilidades Técnicas")
 
-#skill-row("IA Aplicada:", [*API de Claude (Anthropic)*, *API de Gemini*, agentes *LLM* con *tool use* y *guardrails*, *Claude Code*])
-#skill-row("Backend:", [*Python 3.12* (*FastAPI*), *Java 21* (*Spring MVC*, *Spring Security*, *Spring JDBC*), *APIs REST*, *Webhooks*])
-#skill-row("Datos:", [*PostgreSQL*, *SQLite*, *SQL*, *SQLAlchemy*, *JPA/Hibernate*, *Flyway*, *Prisma*])
-#skill-row("Testing:", [*testing unitario y de integración* con *pytest*, *JUnit* y *Mockito*])
-#skill-row("Frontend y Mobile:", [*TypeScript*, *JavaScript*, *React*, *Next.js*, *Tailwind CSS*, *JSP*, *Android* (*Kotlin*, *Jetpack Compose*)])
+#skill-row("IA Aplicada:", [*API de Claude*, *tool use / function calling*, *prompt engineering*, *prompt caching*, *Claude Code*])
+#skill-row("Backend:", [*Python 3.12* (*FastAPI*), *Java 21* (*Spring MVC*, *Spring Security*), *APIs REST*, *Webhooks*])
+#skill-row("Datos:", [*PostgreSQL*, *SQLite*, *SQL*, *JPA/Hibernate*, *Flyway*])
+#skill-row("Testing:", [*pytest*, *JUnit*, *Mockito*, *testing unitario*, *testing de integración*])
+#skill-row("Frontend y Mobile:", [*TypeScript*, *JavaScript*, *React*, *Tailwind CSS*])
 #skill-row("Sistemas:", [*C*, *Assembly x86-64*, *Linux/Unix*, *Git*, *GitHub*, *Docker*, *Maven*, *GDB*, *QEMU*])
 #skill-row("Idiomas:", [*Español* (nativo) · *Inglés B2* (intermedio-avanzado)])
 
@@ -139,7 +139,7 @@
   "Mar 2024 — Dic 2028",
   "Ingeniería Informática (en curso)",
   "Buenos Aires",
-  [Materias aprobadas: *Programación Imperativa* (*C*), *Programación Orientada a Objetos* (*Java*), *Bases de Datos* (*SQL*), *Sistemas Operativos*, *Arquitectura de Computadoras*, *Ingeniería de Software*, *Matemática Discreta*.],
+  [Materias aprobadas: *Programación Imperativa* (*C*), *Programación Orientada a Objetos* (*Java*), *Bases de Datos* (*SQL*), *Sistemas Operativos*, *Arquitectura de Computadoras*, *Ingeniería de Software*, *Estructura de Datos y Algoritmos*, *Proyecto de Aplicaciones Web (PAW)*, *Protocolos de Comunicación*.],
 )
 
 // Sección EXPERIENCIA
@@ -147,13 +147,14 @@
 
 #cv-item(
   "Desarrollador de Software (Freelance)",
-  "Ago 2026 — Presente",
-  "Modo Ruta — Gerenciadora Hotelera",
+  "Oct 2026 — Presente",
+  "Modo Ruta — Alquileres Temporarios",
   "Buenos Aires",
   [
-    - *Construí end-to-end un agente de ventas conversacional por WhatsApp* sobre la *API de Claude* para una gerenciadora hotelera que recibe *\~250 consultas diarias*, en *Python 3.12 async*, *FastAPI*, *SQLite* y *Docker Compose*.
-    - *Aislé al LLM del cálculo de precios*: el modelo interpreta y redacta con *tool use*, y precio y disponibilidad salen solo de la *API REST* del motor de reservas *Octorate*, con cada búsqueda validada en código y un LLM intercambiable (*Claude*, *Gemini*, *OpenAI*).
-    - *Implementé la derivación a vendedores humanos* (reservas, preguntas sin respuesta o errores), la verificación de la firma *HMAC* del webhook y la renovación automática del token *OAuth*, con tests en *pytest* y desarrollo guiado por specs con *Claude Code*.
+    - *Desarrollé y puse en producción un agente de ventas con IA por WhatsApp* (*Python*, *FastAPI*, *API de Claude*, *tool use*) para una empresa de *95 departamentos* con *\~250 consultas diarias* en temporada alta, que cotiza en tiempo real con *Octorate*.
+    - *Construí un panel web para vendedores* (*React 19*, *TypeScript*, *Tailwind CSS*, *TanStack Query*) para tomar y devolver chats al bot, con roles, respuestas rápidas y edición de las instrucciones del bot sin tocar código.
+    - *Reduje un 48 % el costo por llamada al modelo* con *prompt caching* (81 % de aciertos de caché en producción), tras medir que el 82 % del gasto era entrada sin caché, y recorté los resultados de las herramientas y las llamadas sobrantes.
+    - *Aislé al LLM del cálculo de precios* validando en código cada llamada a herramientas, con LLM intercambiable (*Claude*, *Gemini*, *OpenAI*), webhook con firma *HMAC*, tests en *pytest* y despliegue con *Docker Compose* y *Cloudflare Tunnel*.
   ],
 )
 
@@ -163,8 +164,8 @@
   "Computer Society ITBA",
   "Buenos Aires",
   [
-    - *Promovido tras 12 meses liderando mentores y workshops*; defino la agenda técnica de una organización de 25 miembros.
-    - *Capacité a 100+ estudiantes* en el protocolo *BB84* de *distribución cuántica de claves*, diseñando el temario y los workshops técnicos de *QuantumJam*, la primera competencia de *programación cuántica* de Argentina, con el respaldo de *IBM*.
+    - *Promovido a Co-Director tras 12 meses* liderando mentores y workshops en una organización de *25 miembros*.
+    - Organicé la *QuantumJam*, la primera competencia de *programación cuántica* de Argentina, con el respaldo de *IBM*.
     - *Coordiné al equipo de mentores y jurados de hackITBA* (*200+ participantes*).
   ],
 )
@@ -175,7 +176,7 @@
   "Independiente",
   "Buenos Aires",
   [
-    - *Preparo a estudiantes del ITBA para Programación Imperativa y POO*: *gestión manual de memoria*, *punteros* y depuración con *GDB* en *C*; *herencia*, *polimorfismo* y *complejidad algorítmica* en *Java*.
+    - *Preparo a estudiantes del ITBA para Programación Imperativa y POO*: *gestión manual de memoria*, *punteros* y depuración con *GDB* en *C*; *herencia*, *polimorfismo* y *estructuras de datos* en *Java*.
   ],
 )
 
@@ -188,7 +189,7 @@
   "Java 21, Spring MVC, Spring Security, JPA/Hibernate, PostgreSQL, Flyway, JSP, Maven",
   link("http://pawserver.it.itba.edu.ar/paw-2026b-09/")[pawserver.it.itba.edu.ar/paw-2026b-09],
   [
-    - *Desarrollé en un equipo de 4 un marketplace web desplegado* con arquitectura en capas en *Maven* multimódulo: implementé la *moderación* (reportes, baja de contenido y suspensión de usuarios) y el *reseteo de contraseña* por mail con links de un solo uso, con tests de servicios y DAOs en *JUnit* y *Mockito*.
+    - *Desarrollé en un equipo de 4 un marketplace web desplegado* con arquitectura en capas (*Maven* multimódulo).
   ],
 )
 
@@ -208,6 +209,6 @@
   "C, Assembly x86-64, Docker, QEMU, GDB",
   link("https://github.com/MatiNovelli/so-tp2")[github.com/MatiNovelli/so-tp2],
   [
-    - *Implementé un kernel que arranca sin sistema operativo subyacente* (proyecto en equipo de 8): *scheduler* con 5 niveles de prioridad, *syscalls*, *semáforos*, *pipes*, shell interactiva y dos *memory managers* intercambiables (*First-Fit* y *Buddy System*).
+    - *Implementé un kernel que arranca sin sistema operativo subyacente*: *scheduler* con 5 niveles de prioridad, *syscalls*, *semáforos*, *pipes*, shell interactiva y dos *memory managers* intercambiables (*First-Fit* y *Buddy System*).
   ],
 )

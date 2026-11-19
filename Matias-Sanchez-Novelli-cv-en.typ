@@ -117,17 +117,17 @@
 // PROFILE
 #section-title("Profile")
 #par(justify: true)[
-  #text(size: 8.8pt)[*Third-year Computer Engineering* student at *ITBA* (expected graduation *Dec 2028*) focused on *applied artificial intelligence* and *backend* development. Built *end-to-end* a *WhatsApp sales agent* on the *Claude API* for a real client receiving *\~250 daily inquiries*. Co-Director of *Computer Society ITBA*, where I trained *100+ students* for Argentina's first *quantum programming* competition. Available for *internship*, *trainee* or *part-time Junior* roles.]
+  #text(size: 8.8pt)[*Fourth-year Computer Engineering* student at *ITBA* (expected graduation *Dec 2028*) and *full-stack* developer focused on *applied AI*. Built and *shipped to production* an *AI sales agent for WhatsApp* on the *Claude API* and *cut its per-call model cost by 48%*. Co-Director of *Computer Society ITBA*. Available for *internship*, *trainee* or *part-time Junior* roles.]
 ]
 
 // TECHNICAL SKILLS
 #section-title("Technical Skills")
 
-#skill-row("Applied AI:", [*Claude API (Anthropic)*, *Gemini API*, *LLM* agents with *tool use* and *guardrails*, *Claude Code*])
-#skill-row("Backend:", [*Python 3.12* (*FastAPI*), *Java 21* (*Spring MVC*, *Spring Security*, *Spring JDBC*), *REST APIs*, *Webhooks*])
-#skill-row("Data:", [*PostgreSQL*, *SQLite*, *SQL*, *SQLAlchemy*, *JPA/Hibernate*, *Flyway*, *Prisma*])
-#skill-row("Testing:", [*unit and integration testing* with *pytest*, *JUnit* and *Mockito*])
-#skill-row("Frontend & Mobile:", [*TypeScript*, *JavaScript*, *React*, *Next.js*, *Tailwind CSS*, *JSP*, *Android* (*Kotlin*, *Jetpack Compose*)])
+#skill-row("Applied AI:", [*Claude API*, *tool use / function calling*, *prompt engineering*, *prompt caching*, *Claude Code*])
+#skill-row("Backend:", [*Python 3.12* (*FastAPI*), *Java 21* (*Spring MVC*, *Spring Security*), *REST APIs*, *Webhooks*])
+#skill-row("Data:", [*PostgreSQL*, *SQLite*, *SQL*, *JPA/Hibernate*, *Flyway*])
+#skill-row("Testing:", [*pytest*, *JUnit*, *Mockito*, *unit testing*, *integration testing*])
+#skill-row("Frontend & Mobile:", [*TypeScript*, *JavaScript*, *React*, *Tailwind CSS*])
 #skill-row("Systems & Tools:", [*C*, *Assembly x86-64*, *Linux/Unix*, *Git*, *GitHub*, *Docker*, *Maven*, *GDB*, *QEMU*])
 #skill-row("Languages:", [*Spanish* (native) · *English B2* (upper-intermediate)])
 
@@ -139,7 +139,7 @@
   "Mar 2024 — Dec 2028",
   "Computer Engineering (Ingeniería Informática), in progress",
   "Buenos Aires",
-  [Courses passed: *Imperative Programming* (*C*), *Object-Oriented Programming* (*Java*), *Databases* (*SQL*), *Operating Systems*, *Computer Architecture*, *Software Engineering*, *Discrete Mathematics*.],
+  [Courses passed: *Imperative Programming* (*C*), *Object-Oriented Programming* (*Java*), *Databases* (*SQL*), *Operating Systems*, *Computer Architecture*, *Software Engineering*, *Data Structures and Algorithms*, *Web Application Project (PAW)*, *Communication Protocols*.],
 )
 
 // EXPERIENCE
@@ -147,13 +147,14 @@
 
 #cv-item(
   "Software Developer (Freelance)",
-  "Aug 2026 — Present",
-  "Modo Ruta — Hotel Management Company",
+  "Oct 2026 — Present",
+  "Modo Ruta — Vacation Rentals",
   "Buenos Aires",
   [
-    - *Built end-to-end a conversational WhatsApp sales agent* on the *Claude API* for a hotel management company receiving *\~250 inquiries per day*, using *Python 3.12 async*, *FastAPI*, *SQLite* and *Docker Compose*.
-    - *Kept the LLM out of price calculation*: the model interprets and drafts via *tool use*, while price and availability come only from the *Octorate* booking engine's *REST API*, with every search validated in code and a swappable LLM (*Claude*, *Gemini*, *OpenAI*).
-    - *Implemented the handoff to human sales staff* (booking requests, unanswered questions or technical errors), *HMAC* webhook signature verification and automatic *OAuth* token renewal for Octorate, tested with *pytest* and built spec-driven with *Claude Code*.
+    - *Built and shipped to production an AI sales agent for WhatsApp* (*Python*, *FastAPI*, *Claude API*, *tool use*) for a company with *95 rental units* and *\~250 daily inquiries* in peak season, quoting in real time from the *Octorate* PMS.
+    - *Built a web dashboard for sales staff* (*React 19*, *TypeScript*, *Tailwind CSS*, *TanStack Query*) to take over and return chats to the bot, with roles, quick replies and editing of the bot's instructions without code changes.
+    - *Cut per-call model cost by 48%* with *prompt caching* (81% cache hit rate in production), after measuring that 82% of spend was uncached input, and trimmed tool results and redundant calls.
+    - *Kept the LLM out of price calculation* by validating every tool call in code, with a swappable LLM (*Claude*, *Gemini*, *OpenAI*), *HMAC*-signed webhooks, *pytest* tests and deployment with *Docker Compose* and *Cloudflare Tunnel*.
   ],
 )
 
@@ -163,9 +164,9 @@
   "Computer Society ITBA",
   "Buenos Aires",
   [
-    - *Promoted after 12 months leading mentors and workshops*; set the technical agenda of a 25-member organization.
-    - *Trained 100+ students* on the *BB84* *quantum key distribution* protocol, designing the syllabus and technical workshops for *QuantumJam*, Argentina's first *quantum programming* competition, backed by *IBM*.
-    - *Coordinated the mentor and judging team for hackITBA*, ITBA's largest hackathon (*200+ participants*).
+    - *Promoted to Co-Director after 12 months* leading mentors and workshops in a *25-member* organization.
+    - Organized *QuantumJam*, Argentina's first *quantum programming* competition, backed by *IBM*.
+    - *Coordinated the mentor and judging team for hackITBA* (*200+ participants*).
   ],
 )
 
@@ -175,7 +176,7 @@
   "Independent",
   "Buenos Aires",
   [
-    - *Prepare ITBA students for Imperative Programming and OOP*: *manual memory management*, *pointers* and debugging with *GDB* in *C*; *inheritance*, *polymorphism* and *algorithmic complexity* in *Java*.
+    - *Prepare ITBA students for Imperative Programming and OOP*: *manual memory management*, *pointers* and debugging with *GDB* in *C*; *inheritance*, *polymorphism* and *data structures* in *Java*.
   ],
 )
 
@@ -188,7 +189,7 @@
   "Java 21, Spring MVC, Spring Security, JPA/Hibernate, PostgreSQL, Flyway, JSP, Maven",
   link("http://pawserver.it.itba.edu.ar/paw-2026b-09/")[pawserver.it.itba.edu.ar/paw-2026b-09],
   [
-    - *Developed in a team of 4 a deployed web marketplace* with a layered architecture in multi-module *Maven*: implemented *moderation* (reports, content takedown, user suspension) and email *password reset* with single-use links, with service and DAO tests in *JUnit* and *Mockito*.
+    - *Developed in a team of 4 a deployed web marketplace* with a layered architecture (multi-module *Maven*).
   ],
 )
 
@@ -208,6 +209,6 @@
   "C, Assembly x86-64, Docker, QEMU, GDB",
   link("https://github.com/MatiNovelli/so-tp2")[github.com/MatiNovelli/so-tp2],
   [
-    - *Implemented a kernel that boots with no underlying operating system* (team of 8): 5-level priority *scheduler*, *syscalls*, *semaphores*, *pipes*, an interactive shell and two swappable *memory managers* (*First-Fit* and *Buddy System*).
+    - *Implemented a kernel that boots with no underlying operating system*: 5-level priority *scheduler*, *syscalls*, *semaphores*, *pipes*, an interactive shell and two swappable *memory managers* (*First-Fit* and *Buddy System*).
   ],
 )
